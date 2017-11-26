@@ -61,6 +61,37 @@ ul li {
 ul li:first-child {
     margin: 0px auto auto 0.5cm; 
  }
+#games{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+}
+#games td, #games th{
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+#games tr:nht-child(even) {
+  background-color: #fff5cc;
+}
+
+#games tr:nht-child(odd) {
+  background-color: #fff0b3;
+}
+
+#games tr:hover {
+  background-color: #fff8dc;
+}
+
+#games th{
+      padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: #f2f2f2;
+}
+
+
 
 
     
