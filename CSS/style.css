@@ -58,6 +58,9 @@ ul li {
     padding: 5px;
     border-bottom: 3px solid gray;
     }
+ul li:first-child {
+    border-top: 3px solid gray;
+}
 
     
 
