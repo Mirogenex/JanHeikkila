@@ -80,14 +80,14 @@ ul li:first-child {
 }
 
 #games tr:hover {
-  background-color: #fff8dc;
+  background-color: #fffae6;
 }
 
 #games th{
       padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: #cca300;
     color: #f2f2f2;
 }
 
