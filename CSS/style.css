@@ -1,0 +1,59 @@
+/* Header*/
+#header {
+  height: 242px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 25px;
+  bacground-color: black;
+  color: red;
+  }
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: yellow;
+}
+   
+#intro{
+    margin: auto;
+    border: 5px solid gray;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+}
+p {
+    text-align: justify;
+    letter-spacing: 2px;
+}
+ul {
+    padding: 0;
+    border: 3px solid gray;
+    }
+ul li {
+    padding: 10px 12px;
+    border-bottom: 3px solid gray;
+    }
+ul li:last-child {
+    border-bottom: none
+    }
+    
+
+
+
