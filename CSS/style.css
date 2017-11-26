@@ -51,13 +51,14 @@ ul {
     padding: 10px 10px;
     background: #fff0b3;
     border: 3px solid gray;
+    margin-right: 5cm
     }
 ul li {
     margin: 15px auto auto 0.5cm;
     background: #fff5cc;
     }
 ul li:first-child {
-    margin: 0px auto auto auto; 
+    margin: 0px auto auto 0.5cm; 
  }
 
 
