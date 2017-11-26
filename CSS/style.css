@@ -71,11 +71,11 @@ ul li:first-child {
   padding: 5px;
 }
 
-#games tr:nht-child(even) {
+#games tr:nth-child(even) {
   background-color: #fff5cc;
 }
 
-#games tr:nht-child(odd) {
+#games tr:nth-child(odd) {
   background-color: #fff0b3;
 }
 
