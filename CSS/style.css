@@ -53,8 +53,9 @@ ul {
     border: 3px solid gray;
     }
 ul li {
-    margin: auto auto auto 1cm;
+    margin: auto auto auto 0.5cm;
     background: #ffe680;
+    padding: 5px;
     border-bottom: 3px solid gray;
     }
 
