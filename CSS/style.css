@@ -48,18 +48,16 @@ p {
     letter-spacing: 2px;
 }
 ul {
-    padding: 10px 5px;
+    padding: 10px 10px;
     background: #fff0b3;
     border: 3px solid gray;
     }
 ul li {
-    padding: 5px;
+    margin: auto auto auto 1cm;
     background: #ffe680;
     border-bottom: 3px solid gray;
     }
-ul li:last-child {
-    border-bottom: none
-    }
+
     
 
 
