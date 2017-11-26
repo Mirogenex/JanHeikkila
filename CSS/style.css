@@ -20,12 +20,12 @@
   font-size: 17px;
 }
 .topnav a:hover {
-  background.color: white;
+  background-color: #ddd;
   color: black;
 }
 topnav a.active {
   background-color: #4CAF50;
-  color: white;
+  color: yellow;
 }
    
 #intro{
