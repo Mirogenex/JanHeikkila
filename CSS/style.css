@@ -1,12 +1,13 @@
 /* Header*/
 #header {
   height: 242px;
+  text-align: center;
   margin: 0px auto 15px auto;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   color: red;
   }
-<style>
-div {
+
+# {
     margin: auto;
     border: 5px solid gray;
     padding: 10px;
@@ -33,5 +34,5 @@ ul li:last-child {
     }
     
 
-</style>
+
 
