@@ -5,7 +5,21 @@
 <head>
     <title> WWW ja internet - 2017 Jan Heikkilä</title>
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <script>
+    function allowDrop(ev) {
+    ev.preventDefault();
+    }
 
+    function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
 </head>
   
   <body>
@@ -32,5 +46,11 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4769.311756890731!2d27.723382545687542!3d64.21398878200944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46825afa12d54285%3A0xb95371dccfcd4e90!2sKajaanin+ammattikorkeakoulu!5e0!3m2!1sfi!2sfi!4v1512916164973" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     <br/>
     <button onclick="getLocation()">Where are you?</button>
-  </body>
+     <br><br><br><br>
+    <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1" src="images/bag.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    </body>
+    
+    
 </html>
