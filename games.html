@@ -6,6 +6,63 @@
 <head>
     <title> WWW ja internet - 2017 Jan Heikkilä</title>
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    
+    <script>
+function validateForm() {
+    var x = document.forms["myForm"]["firstname"].value;
+    var radios = document.forms["myForm"]["Skill Level"].value;
+    var sel = document.getElementById("Gamelist");
+    var game = sel.options[sel.selectedIndex].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    if (radios == "Newb")
+    {
+      	if (game == "Monster Hunter" )
+    	{
+        	alert("Worry not, I shall accompany you on your hunt!");
+        	return false;
+    	}
+        else
+        {
+        	alert("Nope, i don't have time for small fry!");
+        	return false;
+        }
+    }
+    if(radios == "God Like")
+    {
+    	if (game == "Pokkén")
+        {
+        	alert("Alright! Bring it on!!!");
+            return false
+        }
+        else if (game == "Sm4sh")
+        {
+        	alert("Nope, I don't want to get absolutely destroyed!");
+            return false
+        }
+        else
+    	{
+        	alert("Okay! Let's play!");
+        	return false;
+    	}
+    
+    }
+
+    if (game == "Monster Hunter")
+    {
+     	alert("Hello fellow hunter");
+        return false;
+    }
+    else
+    {
+        alert("Okay! Let's play!");
+        return false;
+    }
+    
+}
+</script>
 
 </head>
   
@@ -29,7 +86,7 @@
     if you're looking for gaming company in any of these games<br>
  </p>
     </div>
-      <h2> Here are the game with my online nickname, skills, my mains and the console(s) I play on.
+      <h2> Here are the games with my online nickname, skills, my mains and the console(s) I play on.
       </h2>
 <table id="games">
     <tr>
@@ -89,6 +146,34 @@
         <td>Mobile</td>
     </tr>
       </table>
+      <br><br><br><br>
+      <h2> Want some gaming company in these game? Contact me through this form!
+      </h2>
+      <br>
+      Game of choise:<br>
+      <select name="Gamelist" form="myForm" id="Gamelist">
+    <option value="Sm4sh">Sm4sh</option>
+    <option value="Monster Hunter">Monster Hunter</option>
+    <option value="Pokkén">Pokkén</option>
+    <option value="Comp. Pokémon">Comp. Pokémon</option>
+    <option value="Splatoon 2">Splatoon 2</option>
+    <option value="Mario Kart 8">Mario Kart 8</option>
+    <option value="Shadowverse">Shadowverse</option>
+    </select>
+    <br> <br>
+    <form name="myForm" action="/action_page.php" target="_blank" method="GET" onsubmit="return validateForm()" method="post" id="myForm">
+    Online name:<br>
+    <input type="text" name="firstname">
+    <br><br>
+    Skill Level: <br>
+    <input type="radio" name="Skill Level" value="Newb" checked> Newb<br>
+    <input type="radio" name="Skill Level" value="Decent"> Decent<br>
+    <input type="radio" name="Skill Level" value="Good"> Good<br>
+    <input type="radio" name="Skill Level" value="Pro"> Pro<br>
+    <input type="radio" name="Skill Level" value="Gud"> Gud<br>
+    <input type="radio" name="Skill Level" value="God Like"> God Like<br><br>
+    <input type="submit" value="Submit">
+    </form>
     
   </body>
 </html>
