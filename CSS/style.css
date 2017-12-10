@@ -124,6 +124,12 @@ input[type=submit] {
 input[type=text]:focus {
     border: 3px solid gray;
 }
+#drag {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
 
 
 
